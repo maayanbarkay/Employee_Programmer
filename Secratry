@@ -1,0 +1,34 @@
+public class Secratry extends Employee {
+	
+	private  double NumOfWords;
+	
+	public Secratry () {
+		//Sending Employee's attributes
+		super ();
+		this.NumOfWords = NumOfWords;
+	}
+	
+	public int calcBonus () {
+		return 500;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getID() {
+		return ID;
+	}
+	public void setID(int iD) {
+		ID = iD;
+	}
+	public int getWage() {
+		return Wage;
+	}
+	public void setWage(int wage) {
+		Wage = wage;
+	}
+	
+}
