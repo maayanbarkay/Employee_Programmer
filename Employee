@@ -1,0 +1,51 @@
+
+public class Employee {
+	//name
+	protected String name;
+	//Employee ID Num
+	protected int ID;
+	//Enployee Wage
+	protected int Wage;
+	
+	//Constructor
+	public Employee(){
+		this.name = name;
+		this.ID = ID;
+		this.Wage = Wage;
+	}
+	//getters and setters
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getID() {
+		return ID;
+	}
+	public void setID(int iD) {
+		ID = iD;
+	}
+	public int getWage() {
+		return Wage;
+	}
+	public void setWage(int wage) {
+		Wage = wage;
+	}
+	
+	
+	//The Bonus the Employee deserves
+	public int calcBonus () {
+		return 0;
+	}
+	//Inserting his bonus to the salary
+	public int updateSalary() {
+		return this.Wage + calcBonus();
+	}
+	
+	//toString
+	public String toString () {
+		return "ID = " + this.ID + " \t Name: " + this.name + "" + " \t Wage = " + this.Wage;
+	}
+	
+}
