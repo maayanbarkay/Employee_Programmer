@@ -1,0 +1,41 @@
+public class Programmer extends Employee {
+	
+	//Constuctor
+	public Programmer () {
+		//Sending Employee's attributes
+		super();
+	}
+	
+	public int calcBonus () {
+		return (int) (this.Wage*0.5);
+	}
+	
+	public int updateSalary () {
+		this.Wage = Wage + calcBonus();
+		return this.Wage;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getID() {
+		return ID;
+	}
+	public void setID(int iD) {
+		ID = iD;
+	}
+	public int getWage() {
+		return Wage;
+	}
+	public void setWage(int wage) {
+		Wage = wage;
+	}
+	
+	public void r () {
+		System.out.println("2");
+	}
+	
+}
